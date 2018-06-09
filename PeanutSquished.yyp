@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "d6c5785a-2cb6-4956-9ea2-9f591df8a14b",
+            "Value": {
+                "id": "bd8ae30f-4b08-49fe-8ee2-5325df040276",
+                "resourcePath": "scripts\\SendLookingDirection\\SendLookingDirection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dcb03c50-737d-46a0-9c72-277aa0e5528c",
             "Value": {
                 "id": "ee848ff1-460c-4094-866d-10901f9b67d2",

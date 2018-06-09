@@ -42,7 +42,8 @@ enum networkEvents {
 	buildingDestroy,
 	connect,
 	initialConnect,
-	disconnect
+	disconnect,
+	lookingDirection,
 }
 
 enum inputs {
