@@ -40,6 +40,7 @@ enum networkEvents {
 	building,
 	buildingDestroy,
 	connect,
+	initialConnect,
 	disconnect
 }
 

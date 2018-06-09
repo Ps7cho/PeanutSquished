@@ -134,8 +134,23 @@ switch(msgid){
 			}
 		}
 	*/
-	break;
 	
+	//you connected
+	break;
+		case networkEvents.initialConnect:
+		
+		var 
+		client = buffer_read(buffer, buffer_u16),
+		startx = buffer_read(buffer, buffer_u16),
+		starty = buffer_read(buffer, buffer_u16);
+		
+			var l = instance_create_layer(startx, starty, "Instances_1", objBread);
+			l.CharacterID = client;
+			clientmap[? string(client)] =l;
+			MyID = client;
+			instance_create_layer(0,0,"Instances", objCamera);
+		break;
+		
 //Someone connected	
 	case networkEvents.connect:
 		var 
@@ -144,19 +159,10 @@ switch(msgid){
 		startx = buffer_read(buffer, buffer_u16),
 		starty = buffer_read(buffer, buffer_u16);
 		
-		if myPacket = 1 {//it was me.
-			var l = instance_create_layer(startx, starty, "Instances_1", objBread);
+			var l = instance_create_layer(startx, starty, "Instances_1", objEnemy);
 			l.CharacterID = client;
-			//l.Team = team;
-			//objClient.Credits = credits;
 			clientmap[? string(client)] =l;
-			MyID = client;
-			instance_create_layer(0,0,"Instances", objCamera);
-		}else{
-				var l = instance_create_layer(startx, starty, "Instances_1", objEnemy);
-				l.CharacterID = client;
-				clientmap[? string(client)] =l;
-			}
+			
 	break;
 
 	
