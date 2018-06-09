@@ -33,7 +33,24 @@ switch(msgid){
 			}
 	break;
 	
-	case networkEvents.position:
+		case networkEvents.position:
+		
+		var client = buffer_read(buffer, buffer_u16);
+		var xx = buffer_read(buffer, buffer_u16);
+		var yy = buffer_read(buffer, buffer_u16);
+		
+		if(ds_map_exists(clientmap, string(client))){
+			var clientObject = clientmap[? string(client)];
+			
+			with clientObject{
+				x = lerp(x, xx,	0.1);
+				y = lerp(y, yy, 0.1);
+			}
+		}
+		
+		break;
+	
+	case networkEvents.rubberband:
 		
 		var client = buffer_read(buffer, buffer_u16);
 		var xx = buffer_read(buffer, buffer_u16);
@@ -154,7 +171,6 @@ switch(msgid){
 //Someone connected	
 	case networkEvents.connect:
 		var 
-		myPacket = buffer_read(buffer, buffer_u8),
 		client = buffer_read(buffer, buffer_u16),
 		startx = buffer_read(buffer, buffer_u16),
 		starty = buffer_read(buffer, buffer_u16);

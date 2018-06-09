@@ -37,6 +37,7 @@ enum networkEvents {
 	hit,
 	bullet,
 	position,
+	rubberband,
 	building,
 	buildingDestroy,
 	connect,
