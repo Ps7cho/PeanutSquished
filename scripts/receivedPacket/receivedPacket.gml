@@ -165,9 +165,11 @@ switch(msgid){
 	case networkEvents.disconnect: 
 		var client = buffer_read(buffer, buffer_u16);
 		var clientObject = clientmap[? string(client)];
-		var l = instance_destroy(clientObject);
 		
-		clientmap[? string(client)] = l;
+		if instance_exists(clientObject) {
+			instance_destroy(clientObject);
+			ds_map_delete(clientmap, string(client));
+		}
 	
 	break;
 
