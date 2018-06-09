@@ -154,6 +154,19 @@ switch(msgid){
 	
 	//you connected
 	break;
+	
+		case networkEvents.lookingDirection:
+		var client = buffer_read(buffer, buffer_u16);
+		var Dir = buffer_read(buffer, buffer_u8);
+		
+		if(ds_map_exists(clientmap, string(client))){
+			var clientObject = clientmap[? string(client)];
+			with clientObject{
+				image_index = Dir;
+			}
+		}
+	break;
+
 		case networkEvents.initialConnect:
 		
 		var 
