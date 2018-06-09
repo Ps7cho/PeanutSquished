@@ -28,7 +28,7 @@ switch(msgid){
 
 			
 			}else{
-				var l = instance_create_layer(xx, yy, "Instances_1", object_Character_1);
+				var l = instance_create_layer(xx, yy, "Instances_1", objEnemy);
 				clientmap[? string(client)] =l;
 			}
 	break;
@@ -45,8 +45,8 @@ switch(msgid){
 			
 			with clientObject{
 				if distance_to_point(xx,yy) > distance{ // server determines the distance 
-					object_Character.x = xx;
-					object_Character.y = yy;
+					objBread.x = xx;
+					objBread.y = yy;
 					//increase_distance();
 				}
 			}
