@@ -45,8 +45,8 @@ switch(msgid){
 			
 			with clientObject{
 				if distance_to_point(xx,yy) > distance{ // server determines the distance 
-					objBread.x = xx;
-					objBread.y = yy;
+					clientObject.x = xx;
+					clientObject.y = yy;
 					//increase_distance();
 				}
 			}
