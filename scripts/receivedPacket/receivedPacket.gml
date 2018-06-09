@@ -171,7 +171,7 @@ switch(msgid){
 		var client = buffer_read(buffer, buffer_u16);
 		var clientObject = clientmap[? string(client)];
 		
-		if instance_exists(clientObject) {
+		if clientObject != undefined && instance_exists(clientObject) {
 			instance_destroy(clientObject);
 			ds_map_delete(clientmap, string(client));
 		}
