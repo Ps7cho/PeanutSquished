@@ -172,6 +172,25 @@
             }
         },
         {
+            "Key": "46f1903a-738c-4795-91e3-1f8cc286d668",
+            "Value": {
+                "id": "1174111c-9954-469b-a955-f8395317d379",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprBasicGun\/sprBasicGun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "48413a31-b613-46bc-84e3-c1703b5b1cbc",
             "Value": {
                 "id": "9418dd5a-8aa6-4585-93a4-efbc9617d08e",
@@ -188,6 +207,25 @@
                 ],
                 "resourcePath": "views\/48413a31-b613-46bc-84e3-c1703b5b1cbc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "53bfd604-6084-4b77-adf6-bdb34dc60bb0",
+            "Value": {
+                "id": "c8844a87-4e26-4f4c-a614-5f920999c64c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objEnemy\/objEnemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -245,6 +283,25 @@
                 ],
                 "resourcePath": "views\/6f5becaa-99f3-45d2-b2ff-de889dca5862.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "725080fa-a0d8-4f7a-b96a-9470d4cf1556",
+            "Value": {
+                "id": "4313b867-254a-4c9a-a4d8-a22d0f6d2250",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objBasicGun\/objBasicGun.yy",
+                "resourceType": "GMObject"
             }
         },
         {
