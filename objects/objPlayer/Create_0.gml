@@ -14,9 +14,9 @@ dmgModifier = 1;
 attack_cooldown = 20;
 team = -1;
 
-movement_inputs[0] = ord("D");
-movement_inputs[1] = ord("W");
-movement_inputs[2] = ord("A");
-movement_inputs[3] = ord("S");
+movement_input[0] = ord("D");
+movement_input[1] = ord("W");
+movement_input[2] = ord("A");
+movement_input[3] = ord("S");
 
 shootingParticle = part_type_create();
