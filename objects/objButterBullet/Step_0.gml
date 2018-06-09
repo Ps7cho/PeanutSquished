@@ -39,9 +39,5 @@ if team == inst.team {
 		part_emitter_burst(objParticleSystems.backgroundSystem, objParticleSystems.backgroundEmitter, shootingParticle, 10);
 	
 	}
-	var knockBack = random_range(100, 150);
-	
-	inst.x = inst.x + lengthdir_x(knockBack, travelDirection);
-	inst.y = inst.y + lengthdir_y(knockBack, travelDirection);
 	instance_destroy();
 }
