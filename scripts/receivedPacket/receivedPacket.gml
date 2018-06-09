@@ -139,13 +139,12 @@ switch(msgid){
 //Someone connected	
 	case networkEvents.connect:
 		var 
+		myPacket = buffer_read(buffer, buffer_u8),
 		client = buffer_read(buffer, buffer_u16),
 		startx = buffer_read(buffer, buffer_u16),
-		starty = buffer_read(buffer, buffer_u16),
-		//team = buffer_read(buffer, buffer_u8),
-		//credits = buffer_read(buffer, buffer_u16);
+		starty = buffer_read(buffer, buffer_u16);
 		
-		if MyID = -1 {//it was me.
+		if myPacket = 1 {//it was me.
 			var l = instance_create_layer(startx, starty, "Instances_1", objBread);
 			l.CharacterID = client;
 			//l.Team = team;
@@ -167,7 +166,7 @@ switch(msgid){
 		var clientObject = clientmap[? string(client)];
 		var l = instance_destroy(clientObject);
 		
-		clientmap[? string(client)] = l;
+		instance_destroy(clientObject);
 	
 	break;
 
