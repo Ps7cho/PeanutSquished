@@ -4,8 +4,8 @@
 var move_xinput = 0;
 var move_yinput = 0;
 
-for ( var i = 0; i < array_length_1d(movement_inputs); i++){
-    var this_key = movement_inputs[i];
+for ( var i = 0; i < array_length_1d(movement_input); i++){
+    var this_key = movement_input[i];
     if keyboard_check(this_key) {
         var this_angle = i*90;
         move_xinput += lengthdir_x(1, this_angle);
