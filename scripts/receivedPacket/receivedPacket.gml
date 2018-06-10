@@ -101,8 +101,9 @@ switch(msgid){
 		var knockBack = buffer_read(buffer, buffer_u8);
 		
 		var character = clientmap[? string(client)];
-		character.x = character.x + lengthdir_x(knockBack, travelDirection);
-		character.y = character.y + lengthdir_y(knockBack, travelDirection);
+		with character{
+			move_contact_solid(travelDirection,knockBack);
+		}
 		
 	break;
 	
