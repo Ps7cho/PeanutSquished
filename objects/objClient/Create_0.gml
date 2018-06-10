@@ -8,7 +8,7 @@ var localhost = "192.168.1.65";
 var port = 6112;
 
 socket = network_create_socket(type);
-isConnected = network_connect(socket, ipaddres, port);
+isConnected = network_connect(socket, localhost, port);
 
 var size = 256;
 var type = buffer_fixed;

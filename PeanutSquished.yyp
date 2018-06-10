@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "d4f104dd-f76a-4e61-a9d1-6c20747cc40c",
+            "Value": {
+                "id": "6405d43b-1073-4a2a-ac2e-f8c66ba42f93",
+                "resourcePath": "sprites\\PeanutMan\\PeanutMan.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d6c5785a-2cb6-4956-9ea2-9f591df8a14b",
             "Value": {
                 "id": "bd8ae30f-4b08-49fe-8ee2-5325df040276",
