@@ -16,6 +16,8 @@ for ( var i = 0; i < array_length_1d(movement_input); i++){
 var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
 
 if moving  {
-    var move_dir = point_direction(0,0,move_xinput,move_yinput);
-    Movement(move_speed*global.seconds_passed,  move_dir);
+	if !stunned{	
+	    var move_dir = point_direction(0,0,move_xinput,move_yinput);
+	    Movement(move_speed*global.seconds_passed,  move_dir);
+	}
 }

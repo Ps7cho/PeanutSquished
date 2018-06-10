@@ -99,11 +99,18 @@ switch(msgid){
 		var client = buffer_read(buffer, buffer_u16);
 		var travelDirection = buffer_read(buffer, buffer_u16);
 		var knockBack = buffer_read(buffer, buffer_u8);
+		var stunned = buffer_read(buffer, buffer_bool);
 		
 		var character = clientmap[? string(client)];
 		with character{
 			move_contact_solid(travelDirection,knockBack);
+			if stunned{
+				self.stunned = stunned;
+				alarm[2] = 180;
+				instance_create_layer(x,y+60,"Instances_1", objclock);
+			}
 		}
+		
 		
 	break;
 	
