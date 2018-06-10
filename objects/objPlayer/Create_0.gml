@@ -22,8 +22,7 @@ movement_input[3] = ord("S");
 stunned = false;
 
 points = 0;
-name = "Ps7cho";
+name = "";
 
 alive = true;
 
-name = get_string("What is your name?","");
