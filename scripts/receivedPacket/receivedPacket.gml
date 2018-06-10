@@ -117,28 +117,17 @@ switch(msgid){
 	break;
 	
 	case networkEvents.building:
-	/*	
+	
 		var buildingType = buffer_read(buffer, buffer_u8); //Building type (building.Generic)
 		var x_pos = buffer_read(buffer, buffer_u16);
 		var y_pos = buffer_read(buffer, buffer_u16);
 		var bldingID = buffer_read(buffer, buffer_u16);
-		var team = buffer_read(buffer, buffer_s8);
-		var credits = buffer_read(buffer, buffer_u16);
 		
 		blding = BuildingPicker(buildingType); //find the type of building that was placed
 		
-		if buildingType > 100 {
-			var resource = instance_create_layer(x_pos,y_pos,"Resources",blding);
-			resource.buildingID = bldingID
-		}
 		var building = instance_create_layer(x_pos,y_pos,"Buildings",blding);
 		building.buildingID = bldingID
-		building.Team = team;
 		
-		if object_Character.Team = team {
-			objClient.Credits = credits;	
-		}
-	*/
 	break;
 
 
