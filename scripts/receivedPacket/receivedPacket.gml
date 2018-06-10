@@ -110,7 +110,7 @@ switch(msgid){
 				instance_create_layer(x,y-60,"Instances_1", objclock);
 			}
 		}
-		
+		ds_list_find_index()
 		
 	break;
 	
