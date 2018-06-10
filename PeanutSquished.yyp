@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "2e9e2a5d-ff89-4ab0-9df4-e687577d4334",
+            "Value": {
+                "id": "eb6c5f7c-c944-4140-8613-a55b73dffb48",
+                "resourcePath": "sprites\\BlackJelly\\BlackJelly.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2f90e8ba-67a7-4c80-bd43-33a22cf3e46f",
             "Value": {
                 "id": "3e05d2af-6ae3-4106-9424-4d45229157a1",
