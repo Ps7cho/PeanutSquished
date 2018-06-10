@@ -85,8 +85,12 @@ switch(msgid){
 		var move_speed_this_frame = bulletSpeed*global.seconds_passed;
 
 		var slug = instance_create_layer(xx,yy,"Instances_1",objButterBullet);
-		objCamera.shooting = true;
-		objCamera.alarm[2] = 10;
+		
+		if client == objClient.MyID {
+			objCamera.shooting = true;
+			objCamera.alarm[2] = 10;
+		}
+		
 		with slug{
 			image_angle = point_direction(xx, yy, pointx, pointy);
 			move_towards_point(pointx,pointy,move_speed_this_frame)
