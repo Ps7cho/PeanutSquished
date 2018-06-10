@@ -7,7 +7,6 @@ var ipaddres = "76.187.20.162";
 var localhost = "192.168.1.65";
 var port = 6112;
 
-
 socket = network_create_socket(type);
 isConnected = network_connect(socket, localhost, port);
 
@@ -21,7 +20,7 @@ clientmap = ds_map_create();
 
 Ping = 2;
 MyID = -1;
-playerName = "Ps7cho";
+playerName = objTextInput.text;
 
 global.seconds_passed = delta_time/1000000;
 
