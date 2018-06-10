@@ -102,7 +102,7 @@ switch(msgid){
 		
 		var character = clientmap[? string(client)];
 		character.x = character.x + lengthdir_x(knockBack, travelDirection);
-		character.y = character.y + lengthdir_x(knockBack, travelDirection);
+		character.y = character.y + lengthdir_y(knockBack, travelDirection);
 		
 	break;
 	
