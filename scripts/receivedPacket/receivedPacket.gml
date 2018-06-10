@@ -196,4 +196,8 @@ switch(msgid){
 	
 	break;
 
+	case networkEvents.gameEnd: 
+		game_end();
+	
+	break;
 }

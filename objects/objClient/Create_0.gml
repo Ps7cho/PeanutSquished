@@ -44,6 +44,7 @@ enum networkEvents {
 	initialConnect,
 	disconnect,
 	lookingDirection,
+	gameEnd
 }
 
 enum inputs {
