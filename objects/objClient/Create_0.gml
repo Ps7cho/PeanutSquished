@@ -21,7 +21,7 @@ clientmap = ds_map_create();
 
 Ping = 2;
 MyID = -1;
-playerName = "";
+playerName = "Ps7cho";
 
 global.seconds_passed = delta_time/1000000;
 
