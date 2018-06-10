@@ -27,6 +27,10 @@ case 5:
 return objSalt;
 break
 
+case 6:
+return objMilk1;
+break
+
 
 
 
