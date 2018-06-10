@@ -8,6 +8,9 @@ Health = 100;
 unitMaxHealth = Health;
 
 move_speed = 600;
+name = "dummie"
+alive = true;
+stunned = false;
 
 movement_inputs[0] = 0;
 movement_inputs[1] = 0;

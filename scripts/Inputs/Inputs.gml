@@ -17,6 +17,7 @@ var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
 
 if moving  {
 	if !stunned{	
+		
 	    var move_dir = point_direction(0,0,move_xinput,move_yinput);
 	    Movement(move_speed*global.seconds_passed,  move_dir);
 	}

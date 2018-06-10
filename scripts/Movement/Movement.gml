@@ -10,7 +10,7 @@ var ytarg = y+lengthdir_y(spd,dir);
 
 if place_free(xtarg,ytarg) {
     x = xtarg;
-    y = ytarg;
+    y = Wave(ytarg-3,ytarg+3,0.5,0);
 }else {
     var sweep_interval = 10;
     

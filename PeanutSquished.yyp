@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0d1f6238-8ba4-4e7e-b02b-024293474c6f",
+            "Value": {
+                "id": "9b9eaa1a-4446-4e79-bc65-9930687a6e22",
+                "resourcePath": "scripts\\Approach\\Approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1364ba3e-545e-470f-ae4b-a61d30351920",
             "Value": {
                 "id": "720c3c26-dd1a-4dfe-99d9-dbda58daa7ed",
@@ -83,6 +91,22 @@
             "Value": {
                 "id": "337b41be-9aff-460e-8a29-849f170df0ef",
                 "resourcePath": "scripts\/LookingDirection\/LookingDirection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "225ddea2-e891-4b56-a312-b6bf6e28c1d0",
+            "Value": {
+                "id": "c1eb5364-e8f1-494c-8771-091d2c4a1283",
+                "resourcePath": "scripts\\Wave\\Wave.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "25aa28c4-74e8-4324-9a42-cec0ee7b6adc",
+            "Value": {
+                "id": "9f44e8c7-ccd2-4e24-987a-504d65639812",
+                "resourcePath": "scripts\\ShootParticle\\ShootParticle.yy",
                 "resourceType": "GMScript"
             }
         },

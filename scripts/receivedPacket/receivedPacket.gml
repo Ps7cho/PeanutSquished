@@ -90,6 +90,7 @@ switch(msgid){
 			move_towards_point(pointx,pointy,move_speed_this_frame)
 			ID = client;
 			bulletID = bullet;
+			ShootParticle(pointx,pointy);
 		}
 		
 	break;
@@ -107,10 +108,8 @@ switch(msgid){
 			if stunned{
 				self.stunned = stunned;
 				alarm[2] = 180;
-				instance_create_layer(x,y-60,"Instances_1", objclock);
 			}
 		}
-		ds_list_find_index()
 		
 	break;
 	

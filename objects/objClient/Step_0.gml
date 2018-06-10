@@ -17,3 +17,7 @@ if mouse_check_button_pressed(mb_left){ //Shooting!
 		shooting = true;
 		alarm[1] = 1;
 }
+
+if keyboard_key_press("0"){
+	debug = !debug;	
+}
