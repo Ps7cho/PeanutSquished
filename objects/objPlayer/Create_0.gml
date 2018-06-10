@@ -26,4 +26,4 @@ name = "Ps7cho";
 
 alive = true;
 
-//name = get_string_async("What is your name?","");
+name = get_string("What is your name?","");
