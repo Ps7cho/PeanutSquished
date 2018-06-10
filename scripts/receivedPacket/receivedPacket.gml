@@ -131,6 +131,17 @@ switch(msgid){
 		
 	break;
 	
+	case networkEvents.stunned:
+		var client = buffer_read(buffer, buffer_u8);
+		var stunned = buffer_read(buffer, buffer_bool);
+		
+		if(ds_map_exists(clientmap, string(client))){
+			var clientObject = clientmap[? string(client)];
+				clientObject.stunned = stunned;
+		}
+	
+	break;
+	
 	case networkEvents.building:
 	
 		var buildingType = buffer_read(buffer, buffer_u8); //Building type (building.Generic)
