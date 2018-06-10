@@ -38,7 +38,6 @@ switch(msgid){
 		var client = buffer_read(buffer, buffer_u16);
 		var xx = buffer_read(buffer, buffer_u16);
 		var yy = buffer_read(buffer, buffer_u16);
-		var stunned = buffer_read(buffer, buffer_bool);
 		
 		if(ds_map_exists(clientmap, string(client))){
 			var clientObject = clientmap[? string(client)];
@@ -46,7 +45,6 @@ switch(msgid){
 			with clientObject{
 				x =  xx;
 				y = yy;
-				self.stunned = stunned;
 			}
 		}
 		

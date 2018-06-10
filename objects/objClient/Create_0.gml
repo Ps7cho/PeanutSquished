@@ -35,6 +35,7 @@ enum networkEvents {
 	input,
 	shoot,
 	hit,
+	stunned,
 	bullet,
 	position,
 	rubberband,
