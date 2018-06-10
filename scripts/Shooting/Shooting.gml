@@ -1,5 +1,5 @@
 
-
+/*
 if (mouse_check_button(mb_left)) && (shooting = false)
 {
 var damage_modifier = dmgModifier;

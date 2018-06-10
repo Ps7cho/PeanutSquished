@@ -1,10 +1,7 @@
 /// @description 
 
-var inst = instance_place(x,y, bullet_collisions);
+var inst = instance_place(x,y, objWalls);
 if inst = noone return;
-if team == inst.team {
-	return
-}else{
-inst.hp -= damage;
+
 instance_destroy();
-}
+
