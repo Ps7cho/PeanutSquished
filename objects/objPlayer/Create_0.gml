@@ -22,3 +22,10 @@ movement_input[3] = ord("S");
 shootingParticle = part_type_create();
 
 stunned = false;
+
+points = 0;
+name = "Dickle";
+
+alive = true;
+
+//name = get_string_async("What is your name?","");

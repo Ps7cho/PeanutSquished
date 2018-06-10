@@ -107,7 +107,7 @@ switch(msgid){
 			if stunned{
 				self.stunned = stunned;
 				alarm[2] = 180;
-				instance_create_layer(x,y+60,"Instances_1", objclock);
+				instance_create_layer(x,y-60,"Instances_1", objclock);
 			}
 		}
 		
