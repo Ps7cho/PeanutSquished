@@ -83,14 +83,15 @@ switch(msgid){
 
 		var bulletSpeed = objBread.bulletSpeed;
 		var move_speed_this_frame = bulletSpeed*global.seconds_passed;
-
+		var character = clientmap[? string(client)];
+		
 		var slug = instance_create_layer(xx,yy,"Instances_1",objButterBullet);
 		objCamera.shooting = true;
 		objCamera.alarm[2] = 10;
 		with slug{
 			image_angle = point_direction(xx, yy, pointx, pointy);
 			move_towards_point(pointx,pointy,move_speed_this_frame)
-			ID = client;
+			ID = character;
 			bulletID = bullet;
 			ShootParticle(pointx,pointy);
 		}

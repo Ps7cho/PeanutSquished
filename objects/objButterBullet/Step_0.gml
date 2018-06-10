@@ -2,6 +2,7 @@
 
 var inst = instance_place(x,y, bullet_collisions);
 if inst = noone return;
+if inst == ID return;
 
 partSplat = part_type_create();
 part_type_shape(partSplat, pt_shape_disk);
