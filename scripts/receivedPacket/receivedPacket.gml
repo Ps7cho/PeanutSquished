@@ -98,7 +98,7 @@ switch(msgid){
 	
 		var client = buffer_read(buffer, buffer_u16);
 		var travelDirection = buffer_read(buffer, buffer_u16);
-		var knockback = buffer_read(buffer, buffer_u8);
+		var knockBack = buffer_read(buffer, buffer_u8);
 		
 		var character = clientmap[? string(client)];
 		character.x = character.x + lengthdir_x(knockBack, travelDirection);
