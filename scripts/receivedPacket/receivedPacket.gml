@@ -181,8 +181,18 @@ switch(msgid){
 			}
 		}
 	break;
+	
+	case networkEvents.name:
+		var client = buffer_read(buffer, buffer_u16);
+		var name = buffer_read(buffer, buffer_string);
+		
+		if(ds_map_exists(clientmap, string(client))){
+		var clientObject = clientmap[? string(client)];
+			clientObject.name = name;
+		}
+	break;
 
-		case networkEvents.initialConnect:
+	case networkEvents.initialConnect:
 		
 		var 
 		client = buffer_read(buffer, buffer_u16),
@@ -194,6 +204,11 @@ switch(msgid){
 			clientmap[? string(client)] =l;
 			MyID = client;
 			instance_create_layer(0,0,"Instances", objCamera);
+		
+		//Send Name
+		buffer_seek(buffer, buffer_seek_start, 0);
+		buffer_write(buffer, buffer_u8, networkEvents.name); //message ID
+		buffer_write(buffer, buffer_string, string(objBread.name)); //Name
 		break;
 		
 //Someone connected	

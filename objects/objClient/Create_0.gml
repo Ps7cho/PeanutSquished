@@ -33,6 +33,7 @@ alarm[0] = 60;
 enum networkEvents {
 	ping,
 	input,
+	name,
 	shoot,
 	hit,
 	stunned,
