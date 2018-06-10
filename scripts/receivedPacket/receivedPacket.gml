@@ -209,7 +209,6 @@ switch(msgid){
 		buffer_write(self.buffer, buffer_u8, networkEvents.name); //message ID
 		buffer_write(self.buffer, buffer_string, objClient.playerName); //Name
 		
-		
 		network_send_packet(socket, self.buffer, buffer_tell(self.buffer));
 		break;
 		

@@ -111,6 +111,25 @@
             }
         },
         {
+            "Key": "227cc73a-e4e4-4c06-8536-cf8665434dd1",
+            "Value": {
+                "id": "20411c10-f0e7-41d0-8988-51099e2f3546",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprPeanutButterMenu\/sprPeanutButterMenu.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "25aa28c4-74e8-4324-9a42-cec0ee7b6adc",
             "Value": {
                 "id": "9f44e8c7-ccd2-4e24-987a-504d65639812",
@@ -124,6 +143,25 @@
                 "id": "7a40d7df-5faa-4f5e-ad0f-3b3cb311b397",
                 "resourcePath": "views\/33ee1c2c-6bb7-4582-bbe4-49f494b3faba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "37eb2be7-1e67-4baf-9b92-b5cdb287f3be",
+            "Value": {
+                "id": "57bbe22e-80a9-4d4c-b0e1-dad29cdbc630",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/roomMenu\/roomMenu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -156,6 +194,25 @@
                 "id": "b98756cc-fedf-4021-bf58-0b60fdd8aaa4",
                 "resourcePath": "rooms\\SplashScreen2\\SplashScreen2.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "5a373592-0f5c-460a-adb2-da230630af4c",
+            "Value": {
+                "id": "bf014d3a-6dd9-4094-aff0-dc102368b288",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite6\/sprite6.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -263,6 +320,25 @@
             }
         },
         {
+            "Key": "ab91347e-4d70-4088-ac34-224da396a2ac",
+            "Value": {
+                "id": "790cfba6-6655-4c68-a0e7-18768435afc3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprJellyMenu\/sprJellyMenu.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ac09cfb6-bf2e-4dee-a040-9e942f05c4a4",
             "Value": {
                 "id": "263875db-734a-4241-bcd3-410b88418111",
@@ -316,6 +392,25 @@
                 "id": "798e0d41-42e5-42f0-87e3-3aaa5ad6581d",
                 "resourcePath": "sprites\/sprclock\/sprclock.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c7c9dde4-419b-4eea-be78-bae959842167",
+            "Value": {
+                "id": "9e37236f-04a1-4eea-bb94-02ce088eae41",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objTextInput\/objTextInput.yy",
+                "resourceType": "GMObject"
             }
         },
         {
