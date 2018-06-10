@@ -204,11 +204,10 @@ switch(msgid){
 			clientmap[? string(client)] =l;
 			MyID = client;
 			instance_create_layer(0,0,"Instances", objCamera);
-		var name = "ps7cho";
 	//Send Name
 		buffer_seek(self.buffer, buffer_seek_start, 0);
 		buffer_write(self.buffer, buffer_u8, networkEvents.name); //message ID
-		buffer_write(self.buffer, buffer_string, name); //Name
+		buffer_write(self.buffer, buffer_string, objClient.playerName); //Name
 		
 		
 		network_send_packet(socket, self.buffer, buffer_tell(self.buffer));
