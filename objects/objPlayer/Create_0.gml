@@ -14,11 +14,6 @@ dmgModifier = 1;
 attack_cooldown = 20;
 team = -1;
 
-movement_input[0] = ord("D");
-movement_input[1] = ord("W");
-movement_input[2] = ord("A");
-movement_input[3] = ord("S");
-
 stunned = false;
 
 points = 0;

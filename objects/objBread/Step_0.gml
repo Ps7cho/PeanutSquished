@@ -6,6 +6,5 @@ LookingDirection();
 if temp != image_index{
 	SendLookingDirection();	
 }
-Inputs();
 Shooting();
 
