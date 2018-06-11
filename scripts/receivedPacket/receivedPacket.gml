@@ -138,6 +138,7 @@ switch(msgid){
 		if(ds_map_exists(clientmap, string(client))){
 			var clientObject = clientmap[? string(client)];
 				clientObject.stunned = stunned;
+				instance_create_layer(clientObject.x, clientObject.y, "Instances_1", objBlackHole);
 		}
 	
 	break;
