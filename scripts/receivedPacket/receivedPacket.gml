@@ -170,8 +170,20 @@ switch(msgid){
 		#endregion
 	case networkEvents.highscore:
 		#region
-		var highScoreMap = json_decode(buffer_read(buffer, buffer_string));
+		var highScoreData = buffer_read(buffer, buffer_string);
+		var highScoreMap = json_decode(highScoreData);
 		
+		if highScoreMap != -1 {
+			var highScoreList = ds_map_find_value(highScoreMap, "scores");
+			if highScoreList != undefined {
+				if !instance_exists(objScorePresentation) {
+					var scorePresentation = instance_create_layer(0, 0, "Instances_1", objScorePresentation);	
+					scorePresentation.highScoreList = highScoreList;
+				} else {
+					objScorePresentation.highScoreList = highScoreList;
+				}
+			}
+		}
 		
 		
 	break;
