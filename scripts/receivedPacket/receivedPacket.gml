@@ -4,18 +4,14 @@ var msgid = buffer_read(buffer, buffer_u8);
 
 switch(msgid){
 
-	//Ping
 	case networkEvents.ping:
+		#region
 		var time = buffer_read(buffer, buffer_u32);
 		Ping = current_time - time;
 	break;
-	
-	
-	
-
-	//player location
+		#endregion
 	case networkEvents.input:
-		
+			#region
 		var client = buffer_read(buffer, buffer_u16);
 		var key = buffer_read(buffer, buffer_u8);
 		var pressed = buffer_read(buffer, buffer_bool);
@@ -32,9 +28,9 @@ switch(msgid){
 				clientmap[? string(client)] =l;
 			}
 	break;
-	
-		case networkEvents.position:
-		
+		#endregion
+	case networkEvents.position:
+			#region
 		var client = buffer_read(buffer, buffer_u16);
 		var xx = buffer_read(buffer, buffer_u16);
 		var yy = buffer_read(buffer, buffer_u16);
@@ -49,9 +45,9 @@ switch(msgid){
 		}
 		
 		break;
-	
+			#endregion
 	case networkEvents.rubberband:
-		
+			#region
 		var client = buffer_read(buffer, buffer_u16);
 		var xx = buffer_read(buffer, buffer_u16);
 		var yy = buffer_read(buffer, buffer_u16);
@@ -71,9 +67,9 @@ switch(msgid){
 		}
 			
 	break;
-
+		#endregion
 	case networkEvents.shoot:
-	
+		#region
 		var client = buffer_read(buffer, buffer_u16);
 		var xx = buffer_read(buffer, buffer_u16);
 		var yy = buffer_read(buffer, buffer_u16);
@@ -101,9 +97,9 @@ switch(msgid){
 		}
 		
 	break;
-	
+		#endregion
 	case networkEvents.hit:
-	
+		#region
 		var client = buffer_read(buffer, buffer_u16);
 		var travelDirection = buffer_read(buffer, buffer_u16);
 		var knockBack = buffer_read(buffer, buffer_u8);
@@ -119,9 +115,9 @@ switch(msgid){
 		}
 		
 	break;
-	
+		#endregion
 	case networkEvents.bullet:
-		
+		#region
 		var bullet = buffer_read(buffer, buffer_u16);
 		with objButterBullet{
 			if bulletID = bullet{
@@ -130,8 +126,9 @@ switch(msgid){
 		}
 		
 	break;
-	
+		#endregion
 	case networkEvents.stunned:
+		#region
 		var client = buffer_read(buffer, buffer_u8);
 		var stunned = buffer_read(buffer, buffer_bool);
 		
@@ -142,9 +139,9 @@ switch(msgid){
 		}
 	
 	break;
-	
+		#endregion
 	case networkEvents.building:
-	
+		#region
 		var buildingType = buffer_read(buffer, buffer_u8); //Building type (building.Generic)
 		var x_pos = buffer_read(buffer, buffer_u16);
 		var y_pos = buffer_read(buffer, buffer_u16);
@@ -156,9 +153,9 @@ switch(msgid){
 		building.buildingID = bldingID
 		
 	break;
-
-
+		#endregion
 	case networkEvents.buildingDestroy:
+		#region
 		/*
 		var bldingID = buffer_read(buffer, buffer_u16);
 		with objBuilding {
@@ -170,8 +167,17 @@ switch(msgid){
 	
 	//you connected
 	break;
-	
-		case networkEvents.lookingDirection:
+		#endregion
+	case networkEvents.highscore:
+		#region
+		var highScoreMap = json_decode(buffer_read(buffer, buffer_string));
+		
+		
+		
+	break;
+		#endregion
+	case networkEvents.lookingDirection:
+		#region
 		var client = buffer_read(buffer, buffer_u16);
 		var Dir = buffer_read(buffer, buffer_u8);
 		
@@ -182,8 +188,9 @@ switch(msgid){
 			}
 		}
 	break;
-	
+		#endregion
 	case networkEvents.name:
+		#region
 		var client = buffer_read(buffer, buffer_u16);
 		var name = buffer_read(buffer, buffer_string);
 		
@@ -191,10 +198,11 @@ switch(msgid){
 		var clientObject = clientmap[? string(client)];
 			clientObject.name = name;
 		}
+		#endregion
 	break;
 
 	case networkEvents.initialConnect:
-		
+		#region
 		var 
 		client = buffer_read(buffer, buffer_u16),
 		startx = buffer_read(buffer, buffer_u16),
@@ -212,9 +220,10 @@ switch(msgid){
 		
 		network_send_packet(socket, self.buffer, buffer_tell(self.buffer));
 		break;
-		
+		#endregion
 //Someone connected	
 	case networkEvents.connect:
+		#region
 		var 
 		client = buffer_read(buffer, buffer_u16),
 		startx = buffer_read(buffer, buffer_u16),
@@ -225,10 +234,11 @@ switch(msgid){
 			clientmap[? string(client)] =l;
 			
 	break;
-
+		#endregion
 	
 //Client Disconnect
 	case networkEvents.disconnect: 
+		#region
 		var client = buffer_read(buffer, buffer_u16);
 		var clientObject = clientmap[? string(client)];
 		
@@ -238,5 +248,5 @@ switch(msgid){
 		}
 	
 	break;
-
+		#endregion
 }

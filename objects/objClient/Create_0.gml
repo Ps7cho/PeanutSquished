@@ -42,6 +42,7 @@ enum networkEvents {
 	rubberband,
 	building,
 	buildingDestroy,
+	highscore,
 	connect,
 	initialConnect,
 	disconnect,
