@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 var scoresSpacing = 30;
-var startDrawPositionX = 1900;
+var startDrawPositionX = 1800;
 var startDrawPositionY = 20
 
 draw_set_color(c_white);
